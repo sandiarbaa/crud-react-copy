@@ -47,7 +47,7 @@ const FormAdd = ({ prefix }) => {
       mahasiswa.push(objMhs);
       localStorage.setItem("mahasiswa", JSON.stringify(mahasiswa));
       alert("Mahasiswa baru berhasil ditambahkan!");
-      window.location.href = "/dashboard";
+      window.location.href = "/crud-react-copy/dashboard";
     }
   };
 
