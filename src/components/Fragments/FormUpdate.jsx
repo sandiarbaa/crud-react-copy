@@ -37,7 +37,7 @@ const FormUpdate = ({ prefix }) => {
 
       localStorage.setItem("mahasiswa", JSON.stringify(mahasiswa));
       alert("Data berhasil diupdate!");
-      window.location.href = "/dashboard";
+      window.location.href = "/crud-react-copy/dashboard";
     } else {
       alert("Data tidak ditemukan!");
     }
