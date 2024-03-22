@@ -6,7 +6,7 @@ const Navbar = () => {
   const handleLogout = () => {
     localStorage.removeItem("username");
     localStorage.removeItem("password");
-    window.location.href = "/";
+    window.location.href = "/crud-react-copy";
   };
 
   return (

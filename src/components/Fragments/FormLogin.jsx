@@ -7,7 +7,7 @@ const FormLogin = ({ prefix }) => {
     e.preventDefault();
     localStorage.setItem("username", e.target.username.value);
     localStorage.setItem("password", e.target.password.value);
-    window.location.href = "/dashboard";
+    window.location.href = "/crud-react-copy/dashboard";
   };
 
   return (
