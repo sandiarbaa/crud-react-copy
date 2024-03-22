@@ -6,23 +6,30 @@ import LoginPage from "./pages/login.jsx";
 import DashboardPage from "./pages/dashboard";
 import AddPage from "./pages/add.jsx";
 import UpdatePage from "./pages/update.jsx";
+import App from "./App.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <LoginPage />,
-  },
-  {
-    path: "/dashboard",
-    element: <DashboardPage />,
-  },
-  {
-    path: "/tambah",
-    element: <AddPage />,
-  },
-  {
-    path: "/edit/:nim",
-    element: <UpdatePage />,
+    path: "/crud-react-copy/",
+    element: <App />,
+    children: [
+      {
+        path: "/crud-react-copy/",
+        element: <LoginPage />,
+      },
+      {
+        path: "/crud-react-copy/dashboard",
+        element: <DashboardPage />,
+      },
+      {
+        path: "/crud-react-copy/tambah",
+        element: <AddPage />,
+      },
+      {
+        path: "/crud-react-copy/edit/:nim",
+        element: <UpdatePage />,
+      },
+    ],
   },
 ]);
 

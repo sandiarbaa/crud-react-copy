@@ -38,7 +38,7 @@ const DashboardPage = () => {
 
             {/* Tambah Data Button */}
             <Link
-              to="/tambah"
+              to="/crud-react-copy/tambah"
               className="bg-blue-600 text-white px-2 py-1.5 md:px-2 md:py-2 rounded-md text-sm"
             >
               Tambah Data
@@ -65,7 +65,7 @@ const DashboardPage = () => {
                   <div className="w-full relative bg-gray-200 h-28 mt-5 border shadow flex flex-col justify-center pl-5 rounded-md mb-4 text-lg">
                     <div className="text-end absolute top-5 right-2 z-10 text-sm">
                       <Link
-                        to={`/edit/${mhs.nim}`}
+                        to={`/crud-react-copy/edit/${mhs.nim}`}
                         className="px-3 py-1 bg-yellow-500 mx-1 rounded-md font-semibold text-white block text-center mb-3 mt-1"
                       >
                         Edit
@@ -102,7 +102,7 @@ const DashboardPage = () => {
             Welcome, {username}
           </h1>
           <Link
-            to="/tambah"
+            to="/crud-react-copy/tambah"
             className="bg-blue-600 text-white px-5 py-2 rounded-md text-lg"
           >
             Tambah Data
@@ -122,7 +122,7 @@ const DashboardPage = () => {
                 >
                   <div className="text-end absolute top-10 right-5 z-10 text-sm">
                     <Link
-                      to={`/edit/${mhs.nim}`}
+                      to={`/crud-react-copy/edit/${mhs.nim}`}
                       className="px-3 py-1 bg-yellow-500 mx-1 rounded-md font-semibold text-white"
                     >
                       Edit
